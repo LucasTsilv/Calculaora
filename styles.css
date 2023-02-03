@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+
+}
+
+#calculadora {
+    width: 400px;
+    padding: .5em;
+    background: url(img/fundo.jpg) no-repeat center;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#calculadora h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: rgb(107, 107, 107);
+    text-shadow: #333;
+
+}
+
+#operacoes{
+    text-align: right;
+}
+
+#op01{
+    color: #777;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 5px 5px 0px 0px;
+
+}
+#op02{
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: .2em;
+    overflow-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 0px 0px 5px 5px;
+}
+
+#botao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 3px;
+    padding: 0.2em; 
+    box-shadow: 5px rgba(0, 4, 255, 0.726);  
+}
+
+#botao button {
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #726e6e56;
+    cursor: pointer;
+    
+}
+
+#botao .num{
+    background-color: #726e6e56;
+
+
+}
+
+#botao button:hover{
+    background-color: rgba(0, 153, 255, 0.678);
+    border-color: rgba(0, 153, 255, 0.678);
+    box-shadow: 0px 0px 0px 2px rgba(0, 183, 255, 0.342);
+
+    
+   
+}
+
+#botao #igual{
+    grid-column: span 2;
+    background-color: #00a2ffde;
+
+}
+
+#botao #igual:hover{
+    background-color:#00b7ffde;
+    /* box-shadow: 0px 0px 0px 5px rgba(0, 183, 255, 0.342); */
+}
